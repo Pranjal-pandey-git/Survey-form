@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+    <title>survey form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header-class">
+            <h1 id="title">StudyMantra Survey Form</h1>
+            <p id="description" class="description">
+                <em>Thank You for taking time to help us improve our performance</em>
+            </p>
+        </header>
+        <form action="" id="survey-form" class="form-label">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="enter your name" class="form-control" required/>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="enter your email" class="form-control" required/>
+            </div>
+            <div class="form-group">
+                <label for="age" id="age-label">Age</label>
+                <input type="number" id="age" placeholder="age" min="10" max="99"
+                 class="form-control" required/>
+            </div>
+            <div class="form-group">
+                <label for="role">
+                Which option best describes your current role?</label>
+                <select name="dropdown" id="role" class="form-control" required>
+                    <option autofocus>select current role</option>
+                    <option value="student">Student</option>
+                    <option value="full time job">Full time job</option>
+                    <option value=" Full time learner"> Full time learner</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend StudyMantra to a friend?</p>
+                <p><label>
+                    <input type="radio" name="answer" id="definitely" value="definitely" checked/>
+                    definitely
+                </label></p>
+                <p><label>
+                    <input type="radio" name="answer" id="maybe" value="maybe"/>
+                      maybe
+                </label></p>
+                <p><label>
+                    <input type="radio" name="answer" id=" not sure" value="not sure">
+                     not sure
+                </label></p>
+            </div>
+            <div class="form-group">
+                <label for="favourite">
+                    What is your favourite feature of StudyMantra?
+                </label>
+                <select name="favourite" id="favourite" class="form-control" required>
+                    <option autofocus>Select a option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open source">Open Source</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved?(check all that apply)</p>
+                <p><label>
+                <input type="checkbox" name="checkbox" value="front-end-projects">Front-end-projects</label></p>
+                <p><label>
+                <input type="checkbox" name="checkbox" value=" back-end-projects"> back-end-projects</label></p>
+                <p><label>
+                <input type="checkbox" name="checkbox" value=" Data Visualisation"> Data Visualisation</label></p>
+                <p><label>
+                    <input type="checkbox" name="checkbox" value=" challenges"> challenges</label></p>
+                <p><label>
+                 <input type="checkbox" name="checkbox" value="  open source community">  open source community</label></p>
+                <p><label>
+                <input type="checkbox" name="checkbox" value="  videos">  videos</label></p>
+                <p><label>
+                <input type="checkbox" name="checkbox" value="  city meetups">  city meetups</label></p>
+                <p><label>
+                <input type="checkbox" name="checkbox" value="  Wiki">  Wiki</label></p>
+                <p><label>
+                <input type="checkbox" name="checkbox" value=" Forum"> Forum</label></p>
+                <p><label>
+                <input type="checkbox" name="checkbox" value="  Additional Courses">  Additional Courses</label></p>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea name="comment" id="comment" cols="50" rows="6" placeholder="Enter your comments here" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button><input type="submit" value="submit" id="submit"></button>
+                </div>
+            </form>
+    </div>
+</body>
+</html>
